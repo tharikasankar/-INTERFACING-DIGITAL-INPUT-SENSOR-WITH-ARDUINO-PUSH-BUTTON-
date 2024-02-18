@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE : 18/02/2024
+## NAME : Tharika S																			             
+## ROLLNUMBER : 212222230159
+## DEPARTMENT : Artificial Intelligence And Data Science.
 
 
 ## AIM:
@@ -38,7 +38,6 @@ Clock Speed	16 MHz
 FIGURE-01
 ![image](https://user-images.githubusercontent.com/36288975/163530431-4d390e98-0942-42d8-95b8-f57d348e6ad8.png)
 
-FIGURE-02
 ## PROCEDURE 
  Open tinker cad account 
 1.	Select Arduino uno , bread board , digital input and digital output 
@@ -56,30 +55,45 @@ FIGURE-02
 
 
 
-FIGURE -03
-
-
+![Screenshot (133)](https://github.com/tharikasankar/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/119475507/18b645fb-dea3-4fdf-8b36-ddd095a2aa5e)
 
 
 ## PROGRAM 
- 
- 
+```
+ int led=3;
+int pushbutton=4;
 
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(pushbutton, INPUT);
+}
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+  if(pb==HIGH)
+  {
+    digitalWrite(led,HIGH);
+    delay(5000);
+    digitalWrite(led,LOW);
+    delay(5000);
+  }
+  else
+  {
+    digitalWrite(led,LOW);
+    delay(500);
+  }
+  
+} 
+``` 
 ## OUTPUT OF SIMULATION :
+## In On Condition:
+![Screenshot (131)](https://github.com/tharikasankar/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/119475507/91820255-9821-40be-afdb-52f7ae59b2c5)
 
-[My image](username.github.com/repository/img/image.jpg)
+
+## In Off Condition:
+![Screenshot (130)](https://github.com/tharikasankar/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/119475507/22fcf584-ff7d-44e5-8b5d-832ed8ec4023)
+
+
 
