@@ -95,5 +95,9 @@ void loop()
 ## In Off Condition:
 ![Screenshot (130)](https://github.com/tharikasankar/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/119475507/22fcf584-ff7d-44e5-8b5d-832ed8ec4023)
 
+## RESULT :
+Thus the simulation output on interfacing digital input sensor with arduino has been completed in tinkercad.
+
+
 
 
